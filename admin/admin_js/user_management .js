@@ -71,8 +71,6 @@ setInterval(function () {
 
     for (let i = 1; i < tr.length; i++) {
         tr[i].querySelector("td:first-child").textContent = i
-        console.log(tr.length)
-        console.log("i = ", i)
         deletes[i].addEventListener("click", function(){
             let table = document.querySelector("table tbody")
             table.removeChild(tr[i])
@@ -98,22 +96,24 @@ delete_all.addEventListener("click", function () {
 
 
 // sửa thông tin tài khoản
-setInterval(function(){
-    let user = document.querySelectorAll(".user")
-    let pass = document.querySelectorAll(".pass")
-    let edit = document.querySelectorAll(".edit")
-    for(let i=1; i<edit.length; i++){
-        edit[i].addEventListener("click", function(){
-            username.value = user[i].textContent
-            password.value = pass[i].textContent
-            let j = i
-            update.addEventListener("click", function(){
-                user[j].textContent = username.value
-                pass[j].textContent = password.value
-            })
-        })
-    }
-},10)
+// setInterval(function(){
+//     let user = document.querySelectorAll(".user")
+//     let pass = document.querySelectorAll(".pass")
+//     let edit = document.querySelectorAll(".edit")
+//     for(let i=1; i<edit.length; i++){
+//         let j
+//         edit[i].addEventListener("click", function(){
+//             j = i
+//             username.value = user[j].textContent
+//             password.value = pass[j].textContent
+//         })
+//         update.addEventListener("click", function(){
+//             user[j].textContent = username.value
+//             pass[j].textContent = password.value
+//         })
+
+//     }
+// },10)
 
 
 
