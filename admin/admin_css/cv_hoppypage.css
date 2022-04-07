@@ -1,0 +1,203 @@
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ main */
+
+
+/* menu */
+.hoppy_page .menu{
+    position: fixed;
+    top: 160px;
+    width: 160px;
+
+}
+
+.hoppy_page .menu .control{
+    display: inline-block;
+    padding: 3px;
+    border: 1px solid darkblue;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+}
+
+.hoppy_page .menu .control i{
+    font-size: 26px;
+    color: darkblue;
+}
+
+.hoppy_page .menu .control i:first-child{
+    display: none;
+}
+
+.hoppy_page .menu >ul{
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.3);
+    line-height: 33px;
+    text-align: center;
+    border: 1px solid black;
+    box-shadow: 1px 2px 10px rgb(46 89 124);
+    border-radius: 6px;
+    transition: 0.6s;
+    transform-origin: 10% top; /*thay đổi vị trí của các phần tử biến đổi, nở ra từ góc trên, cách bên trái 10%*/
+}
+
+.hoppy_page .menu li:first-child{
+    font-weight: 600;
+    font-size: 17px;
+    border-bottom: 1px solid black;
+    color: yellowgreen;
+    margin-bottom: 10px;
+}
+
+.hoppy_page .menu li:hover a{
+    color: #26887b;
+}
+
+
+
+/* content_1 */
+.item_edit{
+    color: #26887b;
+    font-size: 20px;
+    margin-bottom: 3%;
+}
+
+.hoppy_page .container .content_1 form span{
+    display: inline-block;
+    font-weight: 600;
+    width: 156px;
+}
+
+.hoppy_page .container .content_1 input, 
+.hoppy_page .container .content_1 textarea{
+    margin: 0;
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid gray;
+    outline-color: yellowgreen;
+}
+
+/* content_2 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* container */
+/* .hoppy_page .container .content_1{
+    display: flex;
+    justify-content: center;
+}
+
+.hoppy_page .container .content_1 >div{
+    margin: 6% 4%;
+    width: 800px;
+}
+
+.hoppy_page .container .content_1 h1{
+    text-align: center;
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 1%;
+}
+
+.hoppy_page .container .content_1 .title{
+    color: #26887b;
+    font-size: 20px;
+    margin-bottom: 3%;
+}
+
+.hoppy_page .container .content_1 form{
+    background-color: rgba(0,0,0,0.2);
+    border: 1px solid rgb(120, 116, 116);
+    box-shadow: 2px 2px 16px rgb(136, 134, 134);
+    padding: 2%;
+    margin-bottom: 6%;
+}
+
+.hoppy_page .container .content_1 form span{
+    display: inline-block;
+    color: #26887b;
+    font-weight: 600;
+    width: 156px;
+}
+
+.hoppy_page .container .content_1 form div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+
+.hoppy_page .container .content_1 form .notification{
+    font-size: 13px;
+    margin-bottom: 0;
+    justify-content: flex-start;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid gray;
+    outline-color: yellowgreen;
+}
+
+.hoppy_page .container .content_1 .reset{
+    text-align: end;
+    color: steelblue;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.hoppy_page .container .content_1 .reset:hover{
+    cursor: pointer;
+    color: rgb(32, 86, 131);
+}
+
+.content_1 .function_bar{
+    display: flex;
+    justify-content: center;
+    line-height: 23px;
+}
+
+.content_1 .function_bar div{
+    margin: 0 2%;
+    padding: 0 1%;
+    border: 1px solid rgb(130, 128, 128);
+    border-radius: 5px;
+}
+
+.content_1 .function_bar div:hover{
+    cursor: pointer;
+    box-shadow: 1px 1px 6px rgb(59, 59, 59);
+}
+
+.content_1 .function_bar .add{
+    background-color: green;
+}
+
+.content_1 .function_bar .read{
+    background-color: navy;
+}
+
+.content_1 .function_bar .update{
+    background-color: rgb(212, 132, 46);
+}
+
+.content_1 .function_bar .delete_all{
+    background-color: rgb(217, 22, 22);
+} */

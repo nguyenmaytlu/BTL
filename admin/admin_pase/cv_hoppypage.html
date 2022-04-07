@@ -24,7 +24,9 @@
         <!--  CSS ND-->
         <link rel="stylesheet" href="../admin_css/admin_index.css">
         <link rel="stylesheet" href="../admin_css/user_management.css">
+        <link rel="stylesheet" href="../admin_css/cv_hoppypage.css">
     </head>
+
 <body>
     <header>
         <div class="admin_information">
@@ -54,27 +56,36 @@
         </div>
     </header>
 
-    <main>
-        <div class="title">
-            <div>
-                User Management
+    <main class="hoppy_page">
+        <div class="menu">
+            <div class="control">
+                <i class="fa-solid fa-plus"></i>
+                <i class="fa-solid fa-minus"></i>
             </div>
+            <ul>
+                <li> Category </li>
+                <li> <a href="#">Hoppy</a> </li>
+                <li> <a href="#">Design Skills</a> </li>
+                <li> <a href="#">Language Skills</a> </li>
+            </ul>
         </div>
+
         <div class="container">
             <div class="wrapper">
                 <div class="content_1">
                     <h1>Data entry form</h1>
+                    <h1 class="item_edit">Hoppy</h1>
                     <div class="reset">
                         <div title="Delete data in form"><i class="fa-solid fa-broom"></i> reset</div>
                     </div>
                     <form action="">
                         <div>
-                            <span>Username: </span>
-                            <input type="text" class="username" placeholder="username">
+                            <span>My hoppy: </span>
+                            <input type="text" placeholder="music, sports, ...">
                         </div>
                         <div>
-                            <span>Password: </span>
-                            <input type="password" class="password" placeholder="password">
+                            <span>Description: </span>
+                            <textarea type="text" placeholder="description" rows="4"></textarea>
                         </div>
 
                         <div class="notification"></div>
@@ -88,26 +99,26 @@
                 </div>
     
                 <div class="content_2">
-                    <h1><i class="fa-regular fa-rectangle-list"></i> User Management List</h1>
+                    <h1><i class="fa-regular fa-rectangle-list"></i> Item data Hoppy</h1>
                     <table>
                         <tr>
                             <td>#</td>
-                            <td class="user" colspan="2">Username</td>
-                            <td class="pass" colspan="2">Password</td>
+                            <td class="title_name">My hoppy</td>
+                            <td class="Description">Description</td>
                             <td class="edit">Edit</td>
                             <td class="delete">Delete</td>
                         </tr>
                         <tr>
                             <td>1</td>
-                            <td class="user" colspan="2">admin</td>
-                            <td class="pass" colspan="2">admin</td>
+                            <td class="title_name">sport</td>
+                            <td class="Description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
                             <td class="edit"><i class="fa-regular fa-pen-to-square"></i></td>
                             <td class="delete"><i class="fa-regular fa-trash-can"></i></td>
                         </tr>
                         <tr>
                             <td>1</td>
-                            <td class="user" colspan="2">62th1</td>
-                            <td class="pass" colspan="2">th1</td>
+                            <td class="title_name">music</td>
+                            <td class="Description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
                             <td class="edit"><i class="fa-regular fa-pen-to-square"></i></td>
                             <td class="delete"><i class="fa-regular fa-trash-can"></i></td>
                         </tr>
@@ -116,10 +127,9 @@
             </div>
         </div>
     </main>
-
-
-    <script src="../admin_js/user_management .js"></script>
+    
+    <script src="../admin_js/cv_hoppypage.js"></script>
     <script src="../admin_js/admin_index.js"></script>
-
 </body>
+
 </html>

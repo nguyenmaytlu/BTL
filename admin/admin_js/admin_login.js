@@ -2,7 +2,6 @@
 const username = "admin"
 const password = "admin"
 
-
 var inputs = document.querySelectorAll("input")
 var submit = document.querySelector("button")
 var row = document.querySelectorAll(".row")
