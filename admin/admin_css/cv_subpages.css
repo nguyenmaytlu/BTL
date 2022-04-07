@@ -3,14 +3,14 @@
 
 
 /* menu */
-.hoppy_page .menu{
+.cv_subpage_content .menu{
     position: fixed;
     top: 160px;
     width: 160px;
 
 }
 
-.hoppy_page .menu .control{
+.cv_subpage_content .menu .control{
     display: inline-block;
     padding: 3px;
     border: 1px solid darkblue;
@@ -18,16 +18,21 @@
     border-radius: 100%;
 }
 
-.hoppy_page .menu .control i{
+.cv_subpage_content .menu .control:hover{
+    cursor: pointer;
+    background-color: #9bbb72;
+}
+
+.cv_subpage_content .menu .control i{
     font-size: 26px;
     color: darkblue;
 }
 
-.hoppy_page .menu .control i:first-child{
+.cv_subpage_content .menu .control i:first-child{
     display: none;
 }
 
-.hoppy_page .menu >ul{
+.cv_subpage_content .menu >ul{
     padding: 1%;
     background-color: rgba(0, 0, 0, 0.3);
     line-height: 33px;
@@ -39,7 +44,7 @@
     transform-origin: 10% top; /*thay đổi vị trí của các phần tử biến đổi, nở ra từ góc trên, cách bên trái 10%*/
 }
 
-.hoppy_page .menu li:first-child{
+.cv_subpage_content .menu li:first-child{
     font-weight: 600;
     font-size: 17px;
     border-bottom: 1px solid black;
@@ -47,7 +52,7 @@
     margin-bottom: 10px;
 }
 
-.hoppy_page .menu li:hover a{
+.cv_subpage_content .menu li:hover a{
     color: #26887b;
 }
 
@@ -55,14 +60,8 @@
 
 /* content_1 */
 
-.hoppy_page .container .content_1 form span{
-    display: inline-block;
-    font-weight: 600;
-    width: 156px;
-}
-
-.hoppy_page .container .content_1 input, 
-.hoppy_page .container .content_1 textarea{
+.cv_subpage_content .container .content_1 input, 
+.cv_subpage_content .container .content_1 textarea{
     margin: 0;
     width: 100%;
     padding: 5px 10px;
@@ -70,7 +69,6 @@
     outline-color: yellowgreen;
 }
 
-/* content_2 */
 
 
 

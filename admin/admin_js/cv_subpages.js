@@ -64,28 +64,19 @@ add.addEventListener("click", function () {
 })
 
 
-
-// cập nhật số thứ tự tài khoản và xóa từng tài khoản
-setInterval(function () {
-    let tr = document.querySelectorAll("tr")
-    let deletes = document.querySelectorAll(".delete")
-
-    for (let i = 1; i < tr.length; i++) {
-        tr[i].querySelector("td:first-child").textContent = i
-        deletes[i].addEventListener("click", function(){
-            let table = document.querySelector("table tbody")
-            table.removeChild(tr[i])
-        })
-    }
-}, 10)
-
-
 // hiển thị tất cả dữ liệu
 read.addEventListener("click", function () {
     let tr = document.querySelectorAll("tr")
     for (let i = 1; i < tr.length; i++) {
         tr[i].style.display = "table-row"
     }
+})
+
+
+// xóa tất cả dữ liệu
+delete_all.addEventListener("click", function () {
+    let table = document.querySelector("table tbody")
+    table.innerHTML = " <tr> <td>#</td> <td colspan='2'>Username</td> <td colspan='2'>Password</td> <td>Edit</td> <td class='delete'>Delete</td> </tr>"
 })
 
 
@@ -115,11 +106,18 @@ update.addEventListener("click", function(){
 
 
 
-// xóa tất cả dữ liệu
-delete_all.addEventListener("click", function () {
-    let table = document.querySelector("table tbody")
-    table.innerHTML = " <tr> <td>#</td> <td colspan='2'>Username</td> <td colspan='2'>Password</td> <td>Edit</td> <td class='delete'>Delete</td> </tr>"
-})
+// cập nhật số thứ tự tài khoản và xóa từng tài khoản
+setInterval(function () {
+    let tr = document.querySelectorAll("tr")
+    let deletes = document.querySelectorAll(".delete")
+
+    for (let i = 1; i < tr.length; i++) {
+        tr[i].querySelector("td:first-child").textContent = i
+        deletes[i].addEventListener("click", function(){
+            tr[i].remove()
+        })
+    }
+}, 10)
 
 
 
