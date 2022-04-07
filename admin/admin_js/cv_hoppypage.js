@@ -89,6 +89,32 @@ read.addEventListener("click", function () {
 })
 
 
+
+// sửa thông tin từng mục
+let temp
+let title_name
+let Description
+setInterval(function(){
+    title_name = document.querySelectorAll(".title_name")
+    Description = document.querySelectorAll(".Description")
+    let edit = document.querySelectorAll(".edit")
+    for(let i=1; i<edit.length; i++){
+        edit[i].addEventListener("click", function(){
+            temp = i
+            input.value = title_name[i].textContent
+            textarea.value = Description[i].textContent
+        })
+    }
+},10)
+
+update.addEventListener("click", function(){
+    let j = temp
+    title_name[j].textContent = input.value
+    Description[j].textContent = textarea.value
+})
+
+
+
 // xóa tất cả dữ liệu
 delete_all.addEventListener("click", function () {
     let table = document.querySelector("table tbody")
@@ -96,7 +122,8 @@ delete_all.addEventListener("click", function () {
 })
 
 
-// sự kiện đóng mở menu
+
+//đóng mở menu
 let plus = document.querySelector(".fa-plus")
 let minus = document.querySelector(".fa-minus")
 let menu = document.querySelector(".menu>ul")

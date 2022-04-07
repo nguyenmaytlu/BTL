@@ -96,26 +96,27 @@ delete_all.addEventListener("click", function () {
 
 
 // sửa thông tin tài khoản
-// setInterval(function(){
-//     let user = document.querySelectorAll(".user")
-//     let pass = document.querySelectorAll(".pass")
-//     let edit = document.querySelectorAll(".edit")
-//     for(let i=1; i<edit.length; i++){
-//         let j
-//         edit[i].addEventListener("click", function(){
-//             j = i
-//             username.value = user[j].textContent
-//             password.value = pass[j].textContent
-//         })
-//         update.addEventListener("click", function(){
-//             user[j].textContent = username.value
-//             pass[j].textContent = password.value
-//         })
+let temp
+let user
+let pass
+setInterval(function(){
+    user = document.querySelectorAll(".user")
+    pass = document.querySelectorAll(".pass")
+    let edit = document.querySelectorAll(".edit")
+    for(let i=1; i<edit.length; i++){
+        edit[i].addEventListener("click", function(){
+            temp = i
+            username.value = user[i].textContent
+            password.value = pass[i].textContent
+        })
+    }
+},10)
 
-//     }
-// },10)
-
-
+update.addEventListener("click", function(){
+    let j = temp
+    user[j].textContent = username.value
+    pass[j].textContent = password.value
+})
 
 
 

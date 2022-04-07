@@ -1,10 +1,11 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ header~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
 body{
     font-family: 'Poppins', sans-serif;
     color: #fff;
     font-size: 14px;
 }
-
+/* 
 .title{
     display: inline-block;
     margin-top: 2%;
@@ -20,7 +21,7 @@ body{
     background-color: rgba(213, 240, 236, 0.523);
     border: 6px solid rgba(0,0,0,0.2);
     border-radius: 0 100px 100px 0;
-}
+} */
 
 .container{
     display: flex;
@@ -42,6 +43,12 @@ body{
     line-height: 30px;
     margin-bottom: 4%;
 }
+
+.content_1 .management_item{
+    color: #26887b;
+    margin-bottom: 2%;
+}
+
 
 .content_1 .reset{
     text-align: end;
